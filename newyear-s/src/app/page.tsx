@@ -9,11 +9,11 @@ export default function Home() {
   const images = [
     { src: "/photo1.jpg", alt: "Foto 1", text: "La primera captura que te tome jijiji", width: 600, height: 400 },
     { src: "/photo2.jpg", alt: "Foto 2", text: "La primera rutina de skincare o mascarillas (no tengo mi foto sorry)", width: 600, height: 400 },
-    { src: "/photo3.jpg", alt: "Foto 3", text: "Nuestro primer mes y 'cena' juntos", width: 600, height: 400 },
+    { src: "/photo3.jpg", alt: "Foto 3", text: "Nuestro primer mes y &quot;cena&quot; juntos", width: 600, height: 400 },
     { src: "/photo4.jpg", alt: "Foto 4", text: "Un día en el parque junto a mi amada señorita", width: 600, height: 400 },
-    { src: "/photo5.jpg", alt: "Foto 5", text: "Un dia descubriendo más sobre ti y tus gustos 'raritos' jajajaj me encantas", width: 600, height: 400 },
+    { src: "/photo5.jpg", alt: "Foto 5", text: "Un dia descubriendo más sobre ti y tus gustos &quot;raritos&quot; jajajaj me encantas", width: 600, height: 400 },
     { src: "/photo6.jpg", alt: "Foto 6", text: "Segunda rutina de skincare ese dia tu te veias graciosa jajajaja", width: 600, height: 400 },
-    { src: "/photo7.jpg", alt: "Foto 7", text: "Tercera rutina de skincare no te pude dar besitos por esa mascarilla para labios >:v", width: 600, height: 400 },
+    { src: "/photo7.jpg", alt: "Foto 7", text: "Tercera rutina de skincare no te pude dar besitos por esa mascarilla para labios &gt;:v", width: 600, height: 400 },
     { src: "/photo8.jpg", alt: "Foto 8", text: "La primera vez comiendo sushi con mi princesa", width: 600, height: 400 },
     { src: "/photo9.jpg", alt: "Foto 9", text: "Probando croissants rellenos y degustando de un buen café", width: 600, height: 400 },
   ];
@@ -22,7 +22,7 @@ export default function Home() {
     setActiveImage(activeImage === index ? null : index);
   };
 
-  // Función para generar corazones flotantes
+  // Función para generar corazones flotantes (con <Image />)
   const generateHearts = () => {
     const hearts = [];
     for (let i = 0; i < 10; i++) {
@@ -30,18 +30,18 @@ export default function Home() {
       const left = Math.random() * 100 + "%";
       const animationDelay = Math.random() * 5 + "s";
       hearts.push(
-        <img
+        <Image
           key={i}
           src="/corazon.png"
           alt="Corazón"
+          width={50}
+          height={50}
           className="heart"
           style={{
             position: "absolute",
             top,
             left,
             animationDelay,
-            width: "50px",
-            height: "50px",
           }}
         />
       );
@@ -58,7 +58,7 @@ export default function Home() {
       <header className="text-center">
         <h1 className="title text-rose-600">Nuestro Viaje Juntos</h1>
         <p className="texto1 text-rose-400">
-          Recordando algunos momentos de estos meses con usted mi niña hermosa "SARITA"
+          Recordando algunos momentos de estos meses con usted mi niña hermosa &quot;SARITA&quot;
         </p>
       </header>
 

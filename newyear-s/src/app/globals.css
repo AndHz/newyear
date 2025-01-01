@@ -29,6 +29,9 @@ h1 {
   font-size: 30px;
   padding: 5%;
 }
+.textop{
+  font-weight: bold;
+}
 
 /* Galería y botones */
 .gift1 {

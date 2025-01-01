@@ -30,20 +30,14 @@ export default function Home() {
       const left = Math.random() * 100 + "%";
       const animationDelay = Math.random() * 5 + "s";
       hearts.push(
-        <img
-          key={i}
-          src="/corazon.png"
-          alt="Corazón"
-          className="heart"
-          style={{
-            position: "absolute",
-            top,
-            left,
-            animationDelay,
-            width: "50px",
-            height: "50px",
-          }}
-        />
+        <Image src="/corazon.png" alt="Corazón" className="heart" width={50} height={50} style={{
+          position: "absolute",
+          top,
+          left,
+          animationDelay,
+          width: "50px",
+          height: "50px",
+        }} />
       );
     }
     return hearts;

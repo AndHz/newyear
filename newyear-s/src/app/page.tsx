@@ -9,21 +9,20 @@ export default function Home() {
   const images = [
     { src: "/photo1.jpg", alt: "Foto 1", text: "La primera captura que te tome jijiji", width: 600, height: 400 },
     { src: "/photo2.jpg", alt: "Foto 2", text: "La primera rutina de skincare o mascarillas (no tengo mi foto sorry)", width: 600, height: 400 },
-    { src: "/photo3.jpg", alt: "Foto 3", text: 'Nuestro primer mes y "cena" juntos', width: 600, height: 400 },
+    { src: "/photo3.jpg", alt: "Foto 3", text: "Nuestro primer mes y 'cena' juntos", width: 600, height: 400 },
     { src: "/photo4.jpg", alt: "Foto 4", text: "Un día en el parque junto a mi amada señorita", width: 600, height: 400 },
-    { src: "/photo5.jpg", alt: "Foto 5", text: 'Un dia descubriendo más sobre ti y tus gustos "raritos" jajajaj me encantas', width: 600, height: 400 },
-    { src: "/photo6.jpg", alt: "Foto 6", text: "Segunda rutina de skincare ese dia tu te veias graciosa jajajaja", width: 600, height: 400 },
+    { src: "/photo5.jpg", alt: "Foto 5", text: "Un dia descubriendo más sobre ti y tus gustos 'raritos' jajajaj me encantas", width: 600, height: 400 },
+    { src: "/photo6.jpg", alt: "Foto 6", text: "Segunda rutina de skincare ese dia tu te veías graciosa jajajaja", width: 600, height: 400 },
     { src: "/photo7.jpg", alt: "Foto 7", text: "Tercera rutina de skincare no te pude dar besitos por esa mascarilla para labios >:v", width: 600, height: 400 },
     { src: "/photo8.jpg", alt: "Foto 8", text: "La primera vez comiendo sushi con mi princesa", width: 600, height: 400 },
     { src: "/photo9.jpg", alt: "Foto 9", text: "Probando croissants rellenos y degustando de un buen café", width: 600, height: 400 },
   ];
-  
 
   const toggleImage = (index: number) => {
     setActiveImage(activeImage === index ? null : index);
   };
 
-  // Función para generar corazones flotantes (con <Image />)
+  // Función para generar corazones flotantes
   const generateHearts = () => {
     const hearts = [];
     for (let i = 0; i < 10; i++) {
@@ -31,18 +30,18 @@ export default function Home() {
       const left = Math.random() * 100 + "%";
       const animationDelay = Math.random() * 5 + "s";
       hearts.push(
-        <Image
+        <img
           key={i}
           src="/corazon.png"
           alt="Corazón"
-          width={50}
-          height={50}
           className="heart"
           style={{
             position: "absolute",
             top,
             left,
             animationDelay,
+            width: "50px",
+            height: "50px",
           }}
         />
       );
@@ -57,11 +56,25 @@ export default function Home() {
 
       {/* Header */}
       <header className="text-center">
-        <h1 className="title text-rose-600">Nuestro Viaje Juntos</h1>
+        <h1 className="title text-rose-600">Nuestro pequeño viaje Juntos</h1>
         <p className="texto1 text-rose-400">
-          Recordando algunos momentos de estos meses con usted mi niña hermosa &quot; SARITA &quot;
+          Recordando algunos momentos de estos ultimos meses del año con usted mi niña hermosa "SARITA"
         </p>
       </header>
+
+      {/* Reproductor de video */}
+      <div className="w-full max-w-4xl mb-8">
+        <iframe
+          width="100%"
+          height="315"
+          src="https://www.youtube.com/embed/k8O2d7nh3s4?autoplay=1"
+          title="YouTube video player"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+          className="shadow-lg"
+        ></iframe>
+      </div>
 
       {/* Galería Interactiva */}
       <section className="w-full max-w-4xl text-center">
@@ -104,7 +117,7 @@ export default function Home() {
             tomando malas decisiones. Espero este año ambos reflexionemos juntos y seamos mejores
             personas. Te amo mucho, gracias por aparecer en mi vida y quisiera que
             este año podamos estar juntos y dejar las cosas malas que hicimos el año
-            pasado. Quiero hacer bien las cosas a tu lado, mi vida. TE AMOOOO MUA MUA MUA
+            pasado. Quiero hacer bien las cosas a tu lado, mi vida. TE AMOOOO Y FELIZ AÑO NUEVO MUA MUA MUA
           </h2>
         </div>
       </section>

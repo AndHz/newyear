@@ -58,7 +58,7 @@ export default function Home() {
       <header className="text-center">
         <h1 className="title text-rose-600">Nuestro Viaje Juntos</h1>
         <p className="texto1 text-rose-400">
-          Recordando algunos momentos de estos meses con usted mi niña hermosa &quot;SARITA&quot;
+          Recordando algunos momentos de estos meses con usted mi niña hermosa &quot; SARITA &quot;
         </p>
       </header>
 

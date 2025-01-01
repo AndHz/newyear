@@ -9,11 +9,11 @@ export default function Home() {
   const images = [
     { src: "/photo1.jpg", alt: "Foto 1", text: "La primera captura que te tome jijiji", width: 600, height: 400 },
     { src: "/photo2.jpg", alt: "Foto 2", text: "La primera rutina de skincare o mascarillas (no tengo mi foto sorry)", width: 600, height: 400 },
-    { src: "/photo3.jpg", alt: "Foto 3", text: "Nuestro primer mes y &quot;cena&quot; juntos", width: 600, height: 400 },
+    { src: "/photo3.jpg", alt: "Foto 3", text: "Nuestro primer mes y &quot; cena &quot; juntos", width: 600, height: 400 },
     { src: "/photo4.jpg", alt: "Foto 4", text: "Un día en el parque junto a mi amada señorita", width: 600, height: 400 },
-    { src: "/photo5.jpg", alt: "Foto 5", text: "Un dia descubriendo más sobre ti y tus gustos &quot;raritos&quot; jajajaj me encantas", width: 600, height: 400 },
+    { src: "/photo5.jpg", alt: "Foto 5", text: "Un dia descubriendo más sobre ti y tus gustos &quot; raritos &quot; jajajaj me encantas", width: 600, height: 400 },
     { src: "/photo6.jpg", alt: "Foto 6", text: "Segunda rutina de skincare ese dia tu te veias graciosa jajajaja", width: 600, height: 400 },
-    { src: "/photo7.jpg", alt: "Foto 7", text: "Tercera rutina de skincare no te pude dar besitos por esa mascarilla para labios &gt;:v", width: 600, height: 400 },
+    { src: "/photo7.jpg", alt: "Foto 7", text: "Tercera rutina de skincare no te pude dar besitos por esa mascarilla para labios >:v", width: 600, height: 400 },
     { src: "/photo8.jpg", alt: "Foto 8", text: "La primera vez comiendo sushi con mi princesa", width: 600, height: 400 },
     { src: "/photo9.jpg", alt: "Foto 9", text: "Probando croissants rellenos y degustando de un buen café", width: 600, height: 400 },
   ];
